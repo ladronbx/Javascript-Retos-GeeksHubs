@@ -32,10 +32,10 @@
 // 5. Muestra estos números enteros aleatorios por consola.
 
 alert('A continuación, escribe un rango de números:');
-let numero1 = parseInt(prompt('Dime el primer número: ')); // Convertir la entrada a número
-let numero2 = parseInt(prompt('Dime el segundo número: ')); // Convertir la entrada a número
+let numero1 = parseInt(prompt('Dime el primer número: ')); 
+let numero2 = parseInt(prompt('Dime el segundo número: '));
 
-let cantidad = parseInt(prompt('Dime la cantidad de números: ')); // Convertir la entrada a número
+let cantidad = parseInt(prompt('Dime la cantidad de números: '));
 
 function generarNumeroAleatorio(numero1, numero2) {
     // Genera un número aleatorio 
