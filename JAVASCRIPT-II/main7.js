@@ -32,5 +32,6 @@ const calculator = (cantidad, moneda) => {
     }
 }
 
+
 calculator(2, 'libra');
 
