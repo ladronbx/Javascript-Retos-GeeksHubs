@@ -19,7 +19,7 @@
 // Mostrar resultado por console.log()
 
 
-//********  CON IF  ********
+// ********  CON IF  ********
 
 // let figura = prompt('Dime una figura : ');
 
@@ -76,7 +76,7 @@
 //********  CON SWITCH  ********
 let figura = prompt('Dime una figura : ');
 
-function calculoCirculo (radio){
+const calculoCirculo = (radio) => {
     let resultadoCirculo = (radio ** 2)*Math.PI;
     console.log(resultadoCirculo);
 
@@ -88,7 +88,7 @@ function calculoCuadrado (lado){
 
 };
 
-    function calculoTriángulo (base, altura){
+function calculoTriángulo (base, altura){
         let resultadoTriángulo = (base * altura) / 2;
     console.log(resultadoTriángulo);
 

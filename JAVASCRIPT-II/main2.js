@@ -17,19 +17,15 @@
 // el número más bajo del rango y el número más alto del rango.
 
 
-// 2. Pide al usuario que ingrese la cantidad 
+// 2. Pide al usuario que ingrese la CANTIDAD 
 // de números enteros aleatorios que desea generar.
 
 // 3. Crea una función que acepte estos dos números 
 // como parámetros y la cantidad de números aleatorios a generar.
 
-// 4. Dentro de la función, utiliza un bucle para generar 
-// la cantidad de números aleatorios especificada. Para 
-// cada número aleatorio, utiliza una función o método 
-// para obtener un número aleatorio entre el número más 
-// bajo y el número más alto del rango (inclusivos).
+// 4. Dentro de la función, un bucle para generar 
+// la cantidad de números aleatorios especificada.
 
-// 5. Muestra estos números enteros aleatorios por consola.
 
 alert('A continuación, escribe un rango de números:');
 let numero1 = parseInt(prompt('Dime el primer número: ')); 

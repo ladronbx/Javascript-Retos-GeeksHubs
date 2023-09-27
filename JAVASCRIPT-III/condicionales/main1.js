@@ -1,0 +1,1 @@
+// 1. Pedir dos números y decir si son múltiplos o no.
