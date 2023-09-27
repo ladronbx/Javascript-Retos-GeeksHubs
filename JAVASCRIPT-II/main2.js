@@ -26,25 +26,28 @@
 // 4. Dentro de la función, un bucle para generar 
 // la cantidad de números aleatorios especificada.
 
+function generateRandomNumbers(since, to, amount) {
+    const randomNumbers = [];
+  
+    for (let i = 0; i < amount; i++) {
+      const randomNumber = Math.floor(Math.random() * (to - since + 1)) + since;
+      randomNumbers.push(randomNumber);
+    }
+  
+    return randomNumbers;
+  }
+// alert('A continuación, escribe un rango de números:');
+// const since = parseInt(prompt('Dime el primer número: ')); 
+// const to = parseInt(prompt('Dime el segundo número: '));
 
-alert('A continuación, escribe un rango de números:');
-let numero1 = parseInt(prompt('Dime el primer número: ')); 
-let numero2 = parseInt(prompt('Dime el segundo número: '));
+// const amount = parseInt(prompt('Dime la cantidad de números: '));
 
-let cantidad = parseInt(prompt('Dime la cantidad de números: '));
+  const since = 5;
+  const to = 10;
+  const amount = 4;
+  
+  const randomNumbers = generateRandomNumbers(since, to, amount);
+  console.log(randomNumbers);
+  
 
-function generarNumeroAleatorio(numero1, numero2) {
-    // Genera un número aleatorio 
-    const numeroAleatorio = Math.random();
-    
-    // Ajusta el número aleatorio al rango deseado (min y max). Math.floor redondea
-    const numeroEnRango = numero1 + Math.floor(numeroAleatorio * (numero2 - numero1 + 1));
-    
-    return numeroEnRango;
-}
-
-for (let i = 0; i < cantidad; i++) {
-    console.log(generarNumeroAleatorio(numero1, numero2));
-}
-
-
+//   Math.random() devuelve un número decimal pseudoaleatorio entre 0 (inclusive) y 1 (exclusivo) por eso se multiplica
