@@ -42,7 +42,7 @@ function generateRandomNumbers(since, to, amount) {
 
 // const amount = parseInt(prompt('Dime la cantidad de números: '));
 
-  const since = 5;
+  const since = 1;
   const to = 10;
   const amount = 4;
   

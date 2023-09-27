@@ -7,24 +7,25 @@
 // ejemplo: 25 no es primo, ya que 25 es divisible entre 5, 
 // sin embargo, 17 si es primo.
 
+//Debe devolver true si es primo y false si no lo es
 
-let x = parseInt(prompt('Dime un número y te diré si es primo o no: '));
-
-function primo(x) {
+const verification = (x) => {
     if (x <= 1) {
-        console.log('No es primo');
+        return console.log(false);
     } else {
         for (let i = 2; i < x; i++) {
             if (x % i === 0) {
-                console.log('No es primo');
-                break; // Agregamos un break para salir del bucle
+                return console.log(false);
             }
         }
-        console.log('Es primo');
+        return console.log(true);
     }
-}
+};
 
-primo(x);
+verification(25);
+
+
+
 
 
 // ¿Por qué el bucle for?
