@@ -9,14 +9,19 @@
 // introducimos un 5, realizará esta operación 5*4*3*2*1=120.
 
 
-let resultado = 1;
-function factorial(x) {
-  for(let i = x; i >= 1; i-- ){
-    resultado *= i;
+// // let x = parseInt(prompt('Dime un número y calcularé su factorial: '));
+let x = 5;
+let result = 1;
+
+const calculator = (x) => {
+  if (x <= 1) {
+    return console.log('El número indicado no tiene factorial.');
+  } else {
+    for (let i = 2; i <= x; i++) {
+      result *= i;
+    }
+    console.log('El factorial de ' + x + ' es ' + result);
   }
-  return resultado;
+};
 
-}
-
-let x = parseInt(prompt('Dime un número y calcularé su factorial: '));
-console.log(`El factorial de ${x} es ${factorial(x)}`);
+calculator(x);
