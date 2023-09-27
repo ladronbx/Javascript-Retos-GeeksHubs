@@ -3,13 +3,16 @@
 
 const a = parseInt(prompt("Por favor, ingresa el primer número:"));
 const b = parseInt(prompt("Por favor, ingresa el segundo número:"));
-const c = parseInt(prompt("Por favor, ingresa el tercero número:"));
-
-let result;
+const c = parseInt(prompt("Por favor, ingresa el tercer número:"));
 
 const promedio = (a, b, c) => {
-    result = (a + b + c) / 3;
-    return console.log(result);
+    return (a + b + c) / 3;
 }
 
-promedio(a, b, c);
+const resultadoPromedio = promedio(a, b, c);
+
+if (resultadoPromedio < 5) {
+    console.log('No llegas al 5!');
+} else {
+    console.log('Aprobado');
+}
